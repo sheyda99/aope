@@ -425,8 +425,7 @@ footer .copyright a {
 }
 
 
-
-/************************ NEWS SECTION ************************/
+/************** NEWS PAGE **************/
 .section .card {
     border: 0;
     border-radius: 0;
@@ -507,4 +506,103 @@ footer .copyright a {
 }
 #news-page .pagination .page-item .page-link.deactive:hover {
     background-color: transparent;
+}
+
+
+
+/************** LEADERSHIP PAGE **************/
+.leadership-section .leader {
+    margin-bottom: 100px;
+}
+.leadership-section .left-side,
+.leadership-section .top-side {
+    position: relative;
+}
+.leadership-section .left-side {
+    margin: 0 20px;
+}
+.leadership-section .left-side .social-media,
+.leadership-section .top-side .social-media {
+    height: 0;
+    background-color: var(--opacgreen);
+    color: var(--white);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+}
+.leadership-section .left-side:hover .social-media,
+.leadership-section .top-side:hover .social-media {
+    height: 40px;
+}
+.leadership-section .left-side .social-media a,
+.leadership-section .top-side .social-media a {
+    color: inherit;
+    line-height: 40px;
+    font-size: 2.2rem;
+    margin: 0 20px;
+}
+.leadership-section .left-side .social-media a:hover i,
+.leadership-section .top-side .social-media a:hover i {
+    color: var(--darkgreen);
+    transition: 0.5s;
+}
+.leadership-section .left-side img,
+.leadership-section .top-side img {
+    width: 100%;
+}
+.leadership-section .right-side {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px 15px 10px;
+    color: var(--darkgreen);
+}
+.leadership-section .right-side h3 {
+    font-size: 3rem;
+}
+.leadership-section .right-side p {
+    font-size: 1.8rem;
+    opacity: 0.8;
+    margin: 0;
+}
+.leadership-section .right-side a {
+    color: var(--opacgreen);
+    font-size: 1.6rem;
+}
+.leadership-section .right-side a:hover {
+    text-decoration: underline;
+}
+.leadership-section .team {
+    margin-bottom: 100px;
+}
+.leadership-section .team .col-12 {
+    margin-bottom: 30px;
+}
+.leadership-section .top-side {
+    margin: 0 20px;
+}
+.leadership-section .bottom-side {
+    color: var(--darkgreen);
+    text-align: center;
+    padding: 20px 0 ;
+}
+.leadership-section .bottom-side h3 {
+    font-size: 2.6rem;
+    text-align: center;
+    position: relative;
+    z-index: 6;
+}
+.leadership-section .bottom-side p {
+    font-size: 1.6rem;
+    opacity: 0.8;
+}
+@media (max-width: 768px) {
+    .leadership-section .right-side {
+        text-align: center;
+        padding: 20px 0 ;
+    }
 }
