@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xəbərlər | AOPE</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+    <script src="https://kit.fontawesome.com/f9a01ea1da.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header">
+            <div class="about-logo">
+                <a href="index.html">
+                    <img src="assets/img/logo/aope_logo_white.png" alt="Aope logo">
+                </a>
+            </div>
+            <div class="about-menu">
+                <nav id="nav-menu" class="nav">
+                    <div class="menu-close" id="close-menu">
+                        <i class="fa-sharp fa-solid fa-xmark"></i>
+                    </div>
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav_link">Ana Səhifə</a></li>
+                        <li><a href="about.html" class="nav_link">Haqqımızda</a></li>
+                        <li><a href="" class="nav_link">İdarə Heyəti</a></li>
+                        <li><a href="news.html" class="nav_link">Xəbərlər</a></li>
+                        <li><a href="" class="nav_link">Partnyorlarımız</a></li>
+                        <li><a href="" class="nav_link">Üzvlük</a></li>
+                        <li><a href="" class="nav_link">Əlaqə</a></li>
+                        <li><a href="" class="d-none d-lg-block nav_link"><img src="assets/img/icon/en.png" alt="En" height="25"></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="d-block d-lg-none d-flex">
+                <a href="" class="d-block d-lg-none me-5"><img src="assets/img/icon/en.png" alt="En" height="25"></a>
+                <div class="menus" id="toggle-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="news-page">
+        <section class="banner single-page-banner">
+            <div class="banner-bg">
+                <div class="container caption text-start">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Əsas Səhifə</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Xəbərlər</li>
+                        </ol>
+                    </nav>
+                    <h2>Xəbərlər</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="section news-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <a href="news-details.html">
+                                <div class="card-img-top" style="background-image: url('../assets/img/news1.jpg');"></div>
+                            </a>
+                            <div class="card-body">
+                                <span>30 Avqust 2022</span>
+                                <a href="news-details.html"><h5 class="card-title">News title</h5></a>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="news-details.html" class="btn btn-green">Daha ətraflı</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="page-pagination">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}"><i class="fa-solid fa-angle-left"></i></a></li>
+                        <li class="page-item"><a class="deactive page-link active">1</a></li>
+                        <li class="page-item"><a class="deactive page-link">/</a></li>
+                        <li class="page-item"><a class="deactive page-link">5</a></li>
+                        <li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}"><i class="fa-solid fa-angle-right"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.getElementsByClassName("deactive").forEach(element => {
+            element.addEventListener("click", function(e) {
+                e.preventDefault();
+            });
+        });
+    </script>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-7">
+                    <div class="about-logo">
+                        <img src="assets/img/logo/aope_logo_white.png" alt="AOPE logo">
+                    </div>
+                    <p>Ekoloji Təmiz Məhsul İstehsalçıları və İxracatçıları İctimai Birliyi 21 iyun 2019-cu il tarixdə təsis edilmişdir. Azərbaycan Respublikası Ədliyyə Nazirliyinin müvafiq qərarı ilə 2 avqust 2019-cu ildə dövlət qeydiyyatına alınmışdır.</p>
+                </div>
+                <div class="col-12 col-lg-1"></div>
+                <div class="col-12 col-lg-4">
+                    <h3>Əlaqə</h3>
+                    <ul>
+                        <li><span>&nbsp;<i class="fas fa-map-marker-alt"></i></span>&nbsp;&nbsp; Kral Hüseyn 64B, Bakı, Azərbaycan</li>
+                        <li><span><i class="fas fa-phone-alt"></i></span>&nbsp;&nbsp;(+994 12) 561 40 98</li>
+                        <li><span><i class="fas fa-envelope"></i></span>&nbsp;&nbsp;coordinator@aope.az</li>
+                    </ul>
+                    <ul class="mt-5 social-links">
+                        <span><a href=""><i class="fab fa-facebook"></i></a></span> &nbsp;&nbsp;
+                        <span><a href=""><i class="fab fa-twitter"></i></a></span> &nbsp;&nbsp;
+                        <span><a href=""><i class="fab fa-google-plus"></i></a></span> &nbsp;&nbsp;
+                        <span><a href=""><i class="fab fa-instagram"></i></a></span>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p class="m-0">2022 © Sayt <a href="#">GUYS Digital Agency</a> tərəfindən hazırlanmışdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

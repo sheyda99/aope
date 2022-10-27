@@ -19,6 +19,73 @@ ul {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+.btn {
+    font-size: 1.6rem;
+    padding: 10px 15px;
+    box-shadow: 0 3px 4px rgb(0 0 0 / 7%);
+    border: 0;
+    border-radius: 0;
+}
+.btn-green {
+    background-color: var(--opacgreen);
+    color: var(--white);
+}
+.btn-green:hover {
+    background-color: #4d860f;
+    color: var(--white);
+}
+
+
+/************** BREADCRUMB **************/
+.banner.single-page-banner {
+    margin-bottom: 20px;
+}
+.banner.single-page-banner .banner-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner.single-page-banner .caption {
+    margin: 40px 0;
+    color: var(--opacgreen);
+}
+.banner.single-page-banner .caption h2 {
+    font-size: 6rem;
+    font-weight: 700;
+}
+@media (max-width: 768px) {
+    .banner.single-page-banner .caption h2 {
+        font-size: 4rem;
+    }
+}
+@media (max-width: 576px) {
+    .banner.single-page-banner .carousel-caption h2 {
+        font-size: 3rem;
+    }
+}
+
+.breadcrumb .breadcrumb-item {
+    font-size: 1.5rem;
+}
+.breadcrumb .breadcrumb-item a {
+    color: var(--darkgreen);
+    transition: 0.5s;
+}
+.breadcrumb .breadcrumb-item a:hover {
+    text-decoration: underline;
+}
+.breadcrumb .breadcrumb-item:last-child {
+    color: var(--opacgreen);
+}
+.breadcrumb .breadcrumb-item::before {
+    color: var(--darkgreen);
+}
+
+
 
 /************** HOMEPAGE **************/
 #homepage {
@@ -147,6 +214,7 @@ header {
     height: 100px;
     line-height: 100px;
     position: sticky;
+    z-index: 10;
     top: 0;
 }
 .header {
@@ -354,4 +422,89 @@ footer .copyright a {
     .zero {
         font-size: 2.5rem;
     }
+}
+
+
+
+/************************ NEWS SECTION ************************/
+.section .card {
+    border: 0;
+    border-radius: 0;
+    text-align: left;
+}
+.section .card .card-img-top {
+    border: 0;
+    border-radius: 0;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.section .card .card-img-top::after {
+    content: "";
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(27, 26, 26, 0.4);
+    transition: 0.5s;
+}
+.section .card:hover .card-img-top::after {
+    opacity: 1;
+}
+.section .card .card-body {
+    padding: 30px;
+    min-height: 200px;
+}
+.section .card .card-body .card-title {
+    font-size: 2.4rem;
+    color: var(--darkgreen);
+    transition: 0.5s;
+}
+.section .card:hover .card-body .card-title {
+    color: var(--opacgreen);
+}
+.section .card .card-body .card-text {
+    font-size: 1.6rem;
+    color: #9b9b9b;
+}
+.section .card .card-body span {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: var(--opacgreen);
+    margin-bottom: 8px;
+}
+
+@media (max-width: 992px) {
+    .section .card .card-img-top {
+        height: 200px;
+    }
+}
+@media (max-width: 768px) {
+    .section .card {
+        margin-bottom: 50px;
+    }
+}
+
+#news-page .page-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+#news-page .pagination {
+    --bs-pagination-padding-x: 2.2rem;
+    --bs-pagination-padding-y: 1rem;
+}
+#news-page .pagination .page-item .page-link {
+    color: var(--darkgreen);
+    font-size: 1.5rem;
+}
+#news-page .pagination .page-item .page-link.active,
+#news-page .pagination .page-item .page-link.active:hover {
+    border-color: #dee2e6;
+    background-color: #dee2e6 !important;
+}
+#news-page .pagination .page-item .page-link.deactive:hover {
+    background-color: transparent;
 }
