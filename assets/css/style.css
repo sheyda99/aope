@@ -426,6 +426,23 @@ footer .copyright a {
 
 
 /************** NEWS PAGE **************/
+.section h3 {
+    font-size: 3.4rem;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.section .line {
+    position: relative;
+    margin-bottom: 40px;
+}
+.section .line::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    height: 4px;
+    background-color: var(--opacgreen);
+}
 .section .card {
     border: 0;
     border-radius: 0;
@@ -604,5 +621,37 @@ footer .copyright a {
     .leadership-section .right-side {
         text-align: center;
         padding: 20px 0 ;
+    }
+}
+
+
+
+/************** PARTNERS PAGE **************/
+#partners-and-customers-page .card {
+    cursor: pointer;
+    transition: 0.5s;
+}
+#partners-and-customers-page .card:hover {
+    box-shadow: 0 0 15px 0 rgb(40 40 40 / 30%);
+}
+#partners-and-customers-page .card div {
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#partners-and-customers-page .section .col-12 {
+    height: 360px;
+}
+#partners-and-customers-page .section h4 {
+    font-size: 2rem;
+    margin-top: 15px;
+}
+@media (max-width: 576px) {
+    #partners-and-customers-page .section {
+        padding: 0 50px;
+    }
+    #partners-and-customers-page h3 {
+        font-size: 3rem;
     }
 }
