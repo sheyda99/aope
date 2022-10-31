@@ -655,3 +655,88 @@ footer .copyright a {
         font-size: 3rem;
     }
 }
+
+
+
+/************** CONTACT PAGE **************/
+.form-info {
+    border-bottom: 1px solid #eaeaea;
+}
+.form-info .form-contact-news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-info .form-contact-news p {
+    font-size: 1.8rem;
+    padding: 20px 0;
+}
+.form-info .form-contact-news i {
+    cursor: pointer;
+    font-size: 3rem;
+    color: var(--white);
+    background-color: var(--opacgreen);
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.form-info .form-contact-news i:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+.contact .contact-text {
+    text-align: center;
+}
+.contact .contact-text p {
+    color: #9b9b9b;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.contact .contact-text h2 {
+    font-size: 2.5rem;
+}
+
+.contact-form-image {
+    display: flex;
+    justify-content: space-around;
+}
+.contact-form {
+    width: 50%;
+}
+.contact-form input,
+.contact-form textarea {
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--opacgreen);
+    outline: none;
+}
+.contact-form input:focus,
+.contact-form textarea:focus  {
+    outline: 1px solid var(--opacgreen);
+}
+
+.mapouter iframe {
+    width: 100%;
+    height: 500px;
+    opacity: 0.7;
+}
+
+@media (max-width: 992px) {
+    .contact-form {
+        width: 60%;
+    }
+}
+@media (max-width: 768px) {
+    .contact-form {
+        width: 100%;
+    }
+}
