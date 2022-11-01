@@ -617,6 +617,12 @@ footer .copyright a {
     font-size: 1.6rem;
     opacity: 0.8;
 }
+.more-details {
+    margin: 40px 20px 0;
+    font-size: 1.8rem;
+    color: var(--darkgreen);
+    text-align: justify;
+}
 @media (max-width: 768px) {
     .leadership-section .right-side {
         text-align: center;
