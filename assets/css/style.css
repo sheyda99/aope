@@ -602,6 +602,28 @@ footer .copyright a {
 .leadership-section .top-side {
     margin: 0 20px;
 }
+.leadership-section .top-side:hover .overlay {
+    opacity: 1;
+}
+.leadership-section .top-side .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgba(100, 176, 18, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+.leadership-section .top-side .overlay a {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 .leadership-section .bottom-side {
     color: var(--darkgreen);
     text-align: center;
@@ -617,6 +639,15 @@ footer .copyright a {
     font-size: 1.6rem;
     opacity: 0.8;
 }
+.leadership-section .team .modal-header {
+    border-bottom: 0;
+    font-size: 1.8rem;
+}
+.leadership-section .team .modal-header button {
+    padding: 10px;
+    align-self: flex-start;
+}
+
 .more-details {
     margin: 40px 20px 0;
     font-size: 1.8rem;
@@ -627,6 +658,18 @@ footer .copyright a {
     .leadership-section .right-side {
         text-align: center;
         padding: 20px 0 ;
+    }
+    .leadership-section .team .modal-header {
+        flex-direction: column;
+    }
+    .leadership-section .team .modal-header .right-side {
+        order: 3;
+    }
+    .leadership-section .team .modal-header .left-side {
+        order: 2;
+    }
+    .leadership-section .team .modal-header button {
+        order: 1;
     }
 }
 
