@@ -39,6 +39,51 @@ a {
     color: var(--white);
 }
 
+input:not([type="radio"]),
+textarea {
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--opacgreen);
+    outline: none;
+}
+input:not([type="radio"]):focus,
+textarea:focus  {
+    outline: 1px solid var(--opacgreen);
+}
+input[type="radio"] {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: var(--white);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid var(--opacgreen);
+}
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: var(--opacgreen);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid var(--opacgreen);
+}
+
 
 /************** BREADCRUMB **************/
 .banner.single-page-banner {
@@ -741,6 +786,7 @@ footer .copyright a {
 
 .contact .contact-text {
     text-align: center;
+    color: var(--darkgreen);
 }
 .contact .contact-text p {
     color: #9b9b9b;
@@ -758,20 +804,6 @@ footer .copyright a {
 .contact-form {
     width: 50%;
 }
-.contact-form input,
-.contact-form textarea {
-    font-size: 1.5rem;
-    width: 100%;
-    padding: 10px 15px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    border: 1px solid var(--opacgreen);
-    outline: none;
-}
-.contact-form input:focus,
-.contact-form textarea:focus  {
-    outline: 1px solid var(--opacgreen);
-}
 
 .mapouter iframe {
     width: 100%;
@@ -788,4 +820,42 @@ footer .copyright a {
     .contact-form {
         width: 100%;
     }
+}
+
+
+
+/************** MEMBERSHIP PAGE **************/
+.membership-text {
+    text-align: center;
+    color: var(--darkgreen);
+}
+.membership-text h2 {
+    font-size: 2.5rem;
+}
+
+.membership-form-image {
+    display: flex;
+    justify-content: space-around;
+}
+.membership-form {
+    width: 60%;
+}
+.membership-form input {
+    margin-bottom: 25px;
+}
+.membership-form label {
+    font-size: 1.6rem;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+.membership-form .radio-label {
+    font-size: 1.5rem;
+    margin-right: 50px;
+}
+.membership-form .form-group-3  {
+    display: flex;
+}
+.membership-form .form-group-3 > div:not(:last-child),
+.membership-form .form-group-3 > input:not(:last-child) {
+    margin-right: 20px;
 }
