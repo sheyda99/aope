@@ -573,6 +573,9 @@ footer .copyright a {
 
 
 /************** LEADERSHIP PAGE **************/
+.leadership-section h3 {
+    padding: 0;
+}
 .leadership-section .leader {
     margin-bottom: 100px;
 }
